@@ -1,0 +1,33 @@
+info.consul.provided: true
+info.g2c: true
+
+spring:
+  redis:
+    host: ${REDIS_HOST:localhost}
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: ${JDBC_URL:jdbc:postgresql://localhost:5432/aiur}
+    username: postgres
+
+spring.cloud.consul.discovery.preferIpAddress: true
+spring.cloud.consul.discovery.healthCheckPath: /internal/health?mediaType=json
+spring.cloud.consul.discovery.query-passing: true
+
+management:
+  context-path: /internal
+  health:
+    rabbit.enabled: false
+    redis.enabled: false
+endpoints:
+  health:
+    sensitive: false
+
+hystrix.command.default:
+  circuitBreaker.forceClosed: true
+  execution.isolation.thread.timeoutInMilliseconds: 60000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
+zuul.removeSemicolonContent: false
+
+app.hash.id.salt: "go.team"
