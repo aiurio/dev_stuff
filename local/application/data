@@ -1,5 +1,6 @@
-info.consul.provided: true
-info.g2c: true
+info:
+  consul.provided: true
+  g2c: true
 
 spring:
   redis:
