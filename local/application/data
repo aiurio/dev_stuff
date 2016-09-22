@@ -2,6 +2,11 @@ info:
   consul.provided: true
   g2c: true
 
+
+spring.zipkin:
+  host: ${ZIPKIN_HOST:localhost}
+  port: ${ZIPKIN_PORT:9410}
+
 spring:
   redis:
     host: ${REDIS_HOST:localhost}
