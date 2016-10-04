@@ -37,3 +37,5 @@ ribbon:
 zuul.removeSemicolonContent: false
 
 app.hash.id.salt: "go.team"
+app.hash.id.length: 5
+app.hash.id.alphabet: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
