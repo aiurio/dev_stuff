@@ -1,3 +1,9 @@
+logging.level:
+  org.springframework.context.support.PostProcessorRegistrationDelegate: WARN
+  org.springframework.data.rest.webmvc.RepositoryRestHandlerMapping: WARN
+  org.springframework.data.rest.webmvc.BasePathAwareHandlerMapping: WARN
+
+
 info:
   consul.provided: true
   g2c: true
