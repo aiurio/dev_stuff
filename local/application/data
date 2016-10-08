@@ -5,7 +5,7 @@ logging.level:
   org.springframework.boot.actuate.endpoint.mvc: WARN
   org.springframework.web.servlet.mvc.method.annotation: WARN
 
-hystrix.enabled: true
+hystrix.enabled: false
 
 info:
   consul.provided: true
